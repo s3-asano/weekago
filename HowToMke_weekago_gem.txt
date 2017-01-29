@@ -1,0 +1,53 @@
+weekago gemの作成
+
+1.雛形の作成
+
+cd ~/fjord_wksp/ruby
+
+$ bundle gem weekago -t
+
+2.weekago.gemspecの修正
+
+3.Gemの実装
+以下にソースを記述
+
+~/fjord_wksp/ruby/weekago/lib/weekago.rb
+
+4.パッケージ化
+~/fjord_wksp/ruby/weekago
+
+$ gem build weekago.gemspec
+WARNING:  open-ended dependency on date (>= 0, development) is not recommended
+  if date is semantically versioned, use:
+    add_development_dependency 'date', '~> 0'
+WARNING:  See http://guides.rubygems.org/specification-reference/ for help
+  Successfully built RubyGem
+  Name: weekago
+  Version: 0.0.1
+  File: weekago-0.0.1.gem
+
+5.インストール
+$ gem install weekago-0.0.1.gem
+
+Successfully installed weekago-0.0.1
+Parsing documentation for weekago-0.0.1
+Installing ri documentation for weekago-0.0.1
+Done installing documentation for weekago after 0 seconds
+1 gem installed
+
+6.使う
+$ irb
+> require "weekago"
+==> true
+> Weekago.weekago("2017-01-19")
+==> 1
+
+7.別途調査事項
+更新の仕方が理解できていない。
+
+修正した時以下で対応。
+$ gem uninstall weekago
+$ gem build weekago.gemspec
+$ gem install weekago-0.0.1.gem
+
+8.
