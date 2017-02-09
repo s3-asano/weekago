@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
  input_d : Requested day.
  base_d  : option. Based day. Default is today.
  wstrt_d : option. Start day of the week. Default is Monday.'
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/s3-asano/weekago"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
