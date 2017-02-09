@@ -9,8 +9,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ["s3-asano\n"]
   spec.email         = ["show3asa@gmail.com"]
 
-  spec.summary       = 'Several weeks ago from today'
-  spec.description   = 'Returns the number of weeks before today from the date set by the argument. The start of the week is Monday. All future dates return 0.'
+  spec.summary       = 'To find out how many weeks ago the date entered is from the base date.'
+  spec.description   = 'Weekago is a method to find out how many weeks ago the date entered is from the base date.
+ input_d : Requested day.
+ base_d  : option. Based day. Default is today.
+ wstrt_d : option. Start day of the week. Default is Monday.'
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
